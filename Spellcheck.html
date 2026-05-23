@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spell Check Game</title>
+      <script>
+        var a=["COMPUTER","SOFTWARE","HARDWARE","MOUSE"];
+        var b=["KEYBOSRD","MEMORY","MONITOR","CAMERA"];
+        var c=["DESKTOP","PROGRAM","JAVA","INTERNET"];
+        var d=["MODEM","WIRELESS","BLUETOOTH","GRAPHICS"];
+        var e="---Wellcome to spell check GAME---"
+        document.write("select the level","<br>","<br>")
+        document.write("****Gues the Word*****");
+        function start(){
+            document.f1.t1.value=a[0].split('').reverse().join('');
+        }
+        function level1(){
+            var f;
+            f=f1.t2.value;
+            var g=f.toUpperCase();
+            if(g==a[0])
+        {
+          document.f1.t2.value="Correct";
+        }
+        else{
+            document.f1.t2.value="Incorrect";
+        }
+        document.f1.t1.value=a[1].split('').reverse().join('');
+         if(g==a[1])
+        {
+          document.f1.t2.value="Correct";
+        }
+        else{
+            document.f1.t2.value="Incorrect";
+        }
+        }
+    </script>
+</head>
+<body>
+    
+    <form name="f1">
+        <table>
+   <tr>
+    <td><input type="button" onclick="start()" value="level1"></td>
+   </tr>
+   <tr>
+    <td><input type="text" name="t1"></td>
+   </tr>
+   <tr>
+    <td><label>---Gues The Word---</label></td>
+    <td><input type="text" name="t2"></td>
+   </tr>
+   <tr>
+    <td><input type="button" value="Enter" onclick="alert('Correct')"></td>
+   </tr>
+    </table>
+    </form>
+</body>
+</html>

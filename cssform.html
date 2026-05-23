@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    body{
+        background-color: darkblue;
+    }
+    .container{
+        background-color:white;
+        width: 350px;
+        border-radius: 5px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .signup-box h1{
+        margin-bottom: 10px;
+    }
+    .signup-box p{
+        margin-bottom: 20px;
+    }
+    label{
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    input{
+        width: 90%;
+        padding: 5px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    button{
+        width: 100%;
+        padding: 7px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(91, 235, 91);
+        color: white;
+    }
+    .p1{
+        text-align: center;
+    }
+    .p1 a{
+        color:blueviolet;
+    }
+    .Login{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding: 10 0px;
+        line-height: 1.4;
+        text-align: center;
+        color: white;
+    }
+    .Login a{
+        color:mediumturquoise;
+    }
+    h1,h4{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+    <form class="signup-box">
+       <h1>Sign Up</h1>
+       <h4>It,s free and only takes a minute</h4>
+       <label for="fname">First Name</label>
+       <input type="text" name="fname" required>
+       <label for="lname">Last Name</label>
+       <input type="text" name="lname" required>
+       <label for="email">E-mail</label>
+       <input type="email" name="email" required>
+       <label for="password">Password</label>
+       <input type="password" name="password" required>
+       <label for="confirm">Confirm Password</label>
+       <input type="password" name="confirm" required>
+       <button type="submit">Submit</button>
+       <div class="p1">
+       <p>By clicking the Sign up button, you agree to our<br>
+        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+    </p>
+    </div>
+    </form>
+    </div>
+    <p class="Login">Already have an account? <a href="#" id="a1">Login here</a>
+    </p>
+</body>
+</html>

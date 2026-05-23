@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=parseInt(2025)
+        var b=parseInt(5000)
+        while (true){
+        var c=parseInt(prompt("Enter Your PIN Number"))
+        if(c==a)
+        {
+            break
+            }
+        else
+        {
+            alert("Please Enter Correct PIN Number")
+        }
+    }
+            do{
+            c=parseInt(prompt("Enter 1 for withdraw Enter 2 for deposit Enter 3 for check balance Enter 4 for exit"))
+            if(c==1)
+            {
+                c=parseInt(prompt("Enter amount to withdraw"))
+                if(c<=b)
+            {
+                b-=c
+                alert("Amount withdrawal successfull")
+                alert("Your current balance is:"+b)
+            }
+            else 
+            {
+                alert("Insufficient Balance")
+            }
+            }
+            else if(c==2)
+            {
+                c=parseInt(prompt("Enter amount to deposit"))
+                b+=c;
+                alert("Amount deposited successfully")
+                alert("Your current balance is"+b)
+            }
+            else if(c==3)
+            {
+                alert("Your balance is:"+b)
+            }
+            else if(c==4)
+            {
+                alert("Thank you... visit again")
+                break
+            }
+            else
+            {
+                alert("Please Enter The Correct Number")
+            }
+        }while(true)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

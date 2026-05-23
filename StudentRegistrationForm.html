@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <style>
+        a{
+            text-align: center;
+        }
+        marquee{
+            background-color: blanchedalmond;
+            color: blue;
+        }
+        h2{
+            text-align: center;
+            border-radius: 10px;
+            border-style: double;
+            border-width: 5px;
+            border-color: blueviolet;
+            background-color: bisque;
+            color: blue;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        form{
+            background-color: aquamarine;
+            border-radius: 10px;
+            border-color: brown;
+            border-width: 5px;
+            border-style: dotted;
+        }
+        table{
+            background-color: hotpink;
+            border: 10px;
+            border-color: yellow;
+            border-radius: 10px;
+            border-width: 6px;
+            border-style: groove;
+            color: blue;
+            font-style: oblique;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+    <form>
+        <h2>Student Registration Form</h2>
+        <table cellpadding="10px" align="center">
+            <tr>
+                <td>
+                    <label>Roll no:</label>
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>Student name:</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="First Name">-<input type="text" placeholder="Last Name">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>Father's name:</label>
+                </td>
+                <td>
+                    <input type="text" size="30">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>Date of birth:</label>
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>Mobile no:</label>
+                </td>
+                <td>
+                    <input type="text" size="1" placeholder="+91">-<input type="number">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>Email id:</label>
+                </td>
+                <td>
+                    <input type="email" placeholder="example@gmail.com">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>Password:</label>
+                </td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>Gender:</label>
+                </td>
+                <td>
+                    <input type="radio" name="Gender">Male<input type="radio" name="Gender">Female
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>Department:</label>
+                </td>
+                <td>
+                    <input type="checkbox">CSE<input type="checkbox">IT <input type="checkbox">ECE<input type="checkbox">Civil<input type="checkbox">Mech
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>Course:</label>
+                </td>
+                <td>
+                    <select>
+                        <option>----Select Course----</option>
+                        <option>Html</option>
+                        <option>Java</option>
+                        <option>Python</option>
+                        <option>Sql</option>
+                    </select>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>Student photo:</label>
+                </td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>City:</label>
+                </td>
+                <td>
+                    <select>
+                        <option>Select City</option>
+                        <option>Coimbatore</option>
+                        <option>Madurai</option>
+                        <option>Trichy</option>
+                        <option>Salem</option>
+                        <option>Dindigul</option>
+                    </select>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>Address:</label>
+                </td>
+                <td>
+                    <textarea cols="48" rows="5"></textarea>
+                </td>
+            </tr>
+             <tr>
+                <td align="center" colspan="2">
+                    <input type="button" value="Register">
+                    <input type="button" value="Reset">
+                </td>
+
+            </tr>
+        </table>
+        <marquee>Please fill the above details correctly and click Register</marquee>
+            <br>
+            <a href="D:\Programs" target="_blank">Time Table</a>
+            <a href="D:\Programs\Lists.html">Details</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<style>
+.clock{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 100px;
+    background-color: blueviolet;
+    padding: 20px;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.clock:hover{
+    transition: 0.5s ease;
+    transform:scale(1.1);
+}
+.clock::before{
+    content: 'Clock';
+    display: block;
+    color: yellow;
+    font-style: italic;
+}
+</style>
+<body>
+    <div id="clock" class="clock">00:00:00</div>
+     <script>
+     
+       function calender()
+      {
+        var date=new Date();
+       var h=date.getHours();
+       var m=date.getMinutes();
+       var s=date.getSeconds();
+       if(h>12){
+       h=h%12; 
+       }
+       document.getElementById('clock').textContent=`${h}:${m}:${s}`;
+    }
+      setInterval(calender, 1000);
+    </script>
+</body>
+</html>

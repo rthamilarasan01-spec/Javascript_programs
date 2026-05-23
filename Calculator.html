@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script>
+        function sum(){
+           var a=document.getElementById("num").value;
+            var b=eval(a);
+            document.getElementById("num").value=b;
+        }
+        function addValue(value){
+          num.value+=value;
+        }
+        function allclear(){
+          num.value='';
+        }
+        function del(){
+          var a=document.getElementById("num").value;
+          var b=a.slice(0,-1);
+          document.getElementById("num").value=b;
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="num" align="center"></td>
+            
+        </tr>
+          <tr>
+            <td><input type="button" value="AC" onclick="allclear()" id="btn"></td>
+            <td><input type="button" value="DEL" onclick="del()" id="btn"></td>
+            <td><input type="button" value="%" onclick="addValue('%')" id="btn"></td>
+            <td><input type="button" value="/" onclick="addValue('/')" id="btn"></td>
+        </tr>
+          <tr>
+            <td><input type="button" value="7" onclick="addValue('7')" id="btn"></td>
+            <td><input type="button" value="8" onclick="addValue('8')" id="btn"></td>
+            <td><input type="button" value="9" onclick="addValue('9')" id="btn"></td>
+            <td><input type="button" value="*" onclick="addValue('*')" id="btn"></td>
+        </tr>
+          <tr>
+            <td><input type="button" value="4" onclick="addValue('4')" id="btn"></td>
+            <td><input type="button" value="5" onclick="addValue('5')" id="btn"></td>
+            <td><input type="button" value="6" onclick="addValue('6')" id="btn"></td>
+            <td><input type="button" value="+" onclick="addValue('+')" id="btn"></td>
+        </tr>
+          <tr>
+            <td><input type="button" value="1" onclick="addValue('1')" id="btn"></td>
+            <td><input type="button" value="2" onclick="addValue('2')" id="btn"></td>
+            <td><input type="button" value="3" onclick="addValue('3')" id="btn"></td>
+            <td><input type="button" value="-" onclick="addValue('-')" id="btn"></td>
+        </tr>
+          <tr>
+            <td><input type="button" value="." onclick="addValue('.')" id="btn"></td>
+            <td><input type="button" value="0" onclick="addValue('0')" id="btn"></td>
+            <td><input type="button" value="=" onclick="sum()" id="btn"></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

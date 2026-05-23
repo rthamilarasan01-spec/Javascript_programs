@@ -1,0 +1,162 @@
+ body{
+        background-image: url(banner-3.png);
+        display:block;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-color: rgb(50, 5, 5);
+    }
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        z-index: 3;
+    }
+    .logo img{
+        width: 200px;
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        font-size: 24px;
+    }
+    nav ul a{
+        text-decoration: none;
+        color: black;
+    }
+    .icons img{
+        margin-left: 20px;
+    }
+    .hero{
+        display: flex;
+        align-items: center;
+        padding: 0 60px;
+    }
+    .content{
+        max-width: 500px;
+        padding: 0;
+    }
+    .sub-title{
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+    .text{
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .btn{
+        display:inline-block;
+        border: 1px solid blue;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    .down{
+        margin-left: 1100px;
+    }
+    .down img{
+        width: 60px;
+    }
+    .model{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .model img{
+        height: 300px;
+        width: 250px;
+    }
+    .model1{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    .model1 img{
+        height: 300px;
+        width: 250px;
+    }
+    p{
+        color: red;
+        text-align: center;
+        margin-top: 100px;
+        font-size: 30px;
+        margin-bottom: 0px;
+        display: block;
+    }
+    .star{
+        position: relative;
+    }
+    .star img{
+        display: block;
+        transform-origin: center;
+        transition: transform 0.5s ease;
+    }
+    .badge{
+        position: absolute;
+        background-color: green;
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+        width: 70px;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        z-index: 2;
+    }
+    .rating{
+        position: absolute;
+    }
+    .imgmod{
+        position: relative;
+    }
+    .imgmod:hover img{
+        transform: scale(0.95);
+        transition: 0.5s;
+    }
+    .imgmod1{
+        position: relative;
+    }
+    .imgmod1:hover img{
+        transform: scale(0.95);
+        transition: 0.5s;
+    }
+    .imgmod2{
+        position: relative;
+    }
+    .imgmod2:hover img{
+        transform: scale(0.95);
+        transition: 0.5s;
+    }
+    .heart{
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 230px;
+        color: rgb(50, 5, 5);
+    }
+    .heart:hover{
+        color: red;
+    }
+    .star:hover img{
+        transform: scale(0.95);
+        transition: 0.5s;
+    }
+    .imgmod3{
+        position: relative;
+    }
+    .imgmod3:hover img{
+        transform: scale(0.95);
+        transition: 0.5s ease;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    
+  

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Colorful Website</title>
+</head>
+<style>
+    header{
+        background-color: tomato;
+        text-align: center;
+        color: white;
+        padding: 1px;
+        width: 100%;
+    }
+    ol{
+    word-spacing: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    footer{
+        background-color: tomato;
+        text-align: center;
+        padding: 10px;
+        position: sticky;
+        bottom: 5px;
+    }
+    p{
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .p1::before{
+        content: "Home";
+        font-size: 25px;
+        display: block;
+        margin-bottom: 8px;
+    }
+    .p2::before{
+        content: "Services";
+        display: block;
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    .p3::before{
+        content: "About";
+        display: block;
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    .p4::before{
+        content: "Contact";
+        display: block;
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    p.p1{
+        background-color: yellow;
+        border: 10px;
+    }
+    .p2{
+        background-color: aqua;
+    }
+    .p3{
+        background-color: rgb(166, 226, 247);
+    }
+    .p4{
+        background-color: rgb(218, 240, 173);
+        margin-bottom: 80px;
+    }
+    hr{
+        width: 100%;
+        margin-right:20%;
+    }
+</style>
+<body>
+    <header>
+        <h1>My Colorful Website</h1>
+        <ol type="none">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </ol>
+    </header>
+    <p class="p1">
+        welcome to my vibrant website
+    </p>
+    <p class="p2">
+        Explore the services we offer and how we can help you
+    </p>
+    <p class="p3">
+        Learn more about our missions and values
+    </p>
+    <p class="p4">
+        Get in touch with us through the contact form
+    </p>
+    <footer>
+        @2024 My colorful website
+    </footer>
+</body>
+</html>

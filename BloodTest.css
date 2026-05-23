@@ -1,0 +1,16 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    text-align: center;
+    background-color: blueviolet;
+}
+.container{
+    width: 500px;
+    background-color: rgb(183, 183, 85);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 60px;
+    color: whitesmoke
+}

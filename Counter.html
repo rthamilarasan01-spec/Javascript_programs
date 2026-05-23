@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Counter.css">
+    <script>
+        let interval;
+        let count=0;
+        let s=0;
+        let m=0;
+        function Counter(){
+            count++;
+            document.getElementById('h1').textContent="Count:"+count;
+        }
+        function setCounter(){
+            count=Number(document.getElementById('text').value);
+            document.getElementById('text').value=null;
+            clearInterval(interval);
+            interval=setInterval(Counter,1000);
+        }
+        function Reset(){
+            document.getElementById('text').value=null
+            document.getElementById('h1').textContent="Count:";
+            clearInterval(interval);
+        }
+        function Stop(){
+            document.getElementById('h1').textContent=`Count:${count}`;
+            clearInterval(interval)
+            console.log(count)
+            console.log(interval);
+        }
+        function Resume(){
+            clearInterval(interval);
+            interval=setInterval(Counter,1000);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+    <img src="timer-sablier.gif">
+    <h1 id="h1">Count:</h1>
+    <input type="text" id="text">
+    <div>
+    <button onclick="setCounter()" id="btn">Count</button>
+    <button onclick="Reset()" id="btn">Reset</button>
+    <button onclick="Stop()" id="btn">Stop</button>
+    <button onclick="Resume()" id="btn">Resume</button>
+    </div>
+    </div>
+</body>
+</html>

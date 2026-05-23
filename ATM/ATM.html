@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let acc_balance=10000;
+        let pin=2025;
+        let option=0;
+        let display=[
+            'Enter 1 for Withdraw',
+            'Enter 2 for Deposit',
+            'Enter 3 for Check Balance',
+            'Enter 4 for Exit'
+        ]
+        let a=parseInt(prompt('Enter Your PIN:'))
+        if(a==pin)
+    {
+        let b=parseInt(prompt(display))
+        while(true){
+        if(b==1){
+            let c=parseInt(prompt("Enter the amount to withdraw"))
+            if(c<=acc_balance){
+                acc_balance-=c;
+                b=parseInt(prompt(display+'Amount withdraw Successfull'
+                +`Your Current Balance is:${acc_balance}`))
+            }
+            else{
+                b=0;
+                b=parseInt(prompt(display+'Insufficiant Balance'))
+            }
+        }
+        else if(b==2){
+            c=0;
+            c=parseInt(prompt('Enter Amount to Deposit'))
+            acc_balance+=c;
+             b=parseInt(prompt(display+'Amount Deposited Successfully'
+                +`Your Current Balance is:${acc_balance}`))
+        }
+        else if(b==3){
+            b=parseInt(prompt(display+`Your Current Balance is:
+            ${acc_balance}`))
+        }
+        else if(b==4){
+            alert('***Thank You***')
+            break
+        }
+        else{
+            alert('Invalid Input')
+            b=parseInt(prompt(display))
+        }
+    }
+    }
+    else{
+        alert('Incorrect PIN')
+    }
+    </Script>
+</head>
+<body>
+    <div id="container">
+</body>
+</html>

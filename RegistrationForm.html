@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>s
+    <style>
+        form{
+            background-color: gray;
+            font-size: medium;
+            font-style: oblique;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: yellow;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 10px;
+            border-style: groove;
+            border-width: 10px;
+            border-color: blue;
+        }
+        table{
+            background-color: cadetblue;
+            border-radius: 20px;
+            border-style: double;
+            border-width: 5px;
+            border-color: chartreuse;
+        }
+        h3{
+            color: darkblue;
+            background-color: blanchedalmond;
+            border: 2px;
+            border-style: dotted;
+            border-color: blueviolet;
+            border-radius: 10px;
+        }
+
+    </style>
+    <h3 align="center">Registration Form</h3>
+    <form>
+        <table align="center" cellpadding="10px">
+            <tr>
+                <td>
+                    <label>Enter Your Name:</label>
+                </td>
+                <td>
+                    <input type="text" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Enter Your Mail-ID:</label>
+                </td>
+                <td>
+                    <input type="email" size="30" placeholder="example@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Choose Your Gender:</label>
+                </td>
+                <td>
+                    <input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Create Your Password:</label>
+                </td>
+                <td>
+                    <input type="password" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Confirm Your Password:</label>
+                </td>
+                <td>
+                    <input type="password" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Mobile No:</label>
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Choose Your Dob:</label>
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Enter Your Address:</label>
+                </td>
+                <td>
+                    <textarea cols="48" rows=""></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Choose Your Location:</label>
+                </td>
+                <td>
+                    <select>
+                        <option>select</option>
+                        <option>Chennai</option>
+                        <option>Coimbatore</option>
+                        <option>Madurai</option>
+                        <option>Trichy</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" align="center"> <input type="button" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

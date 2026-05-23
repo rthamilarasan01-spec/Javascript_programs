@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BloodTest.css">
+    <script>
+        function Results(){
+        var select=document.getElementById("myselect")
+        var a=select.options[select.selectedIndex].text
+        document.getElementById('h1').textContent=a
+        var select1=document.getElementById("myselect1")
+        var b=select1.options[select1.selectedIndex].text
+        var c=a+b
+  if(c==="AO"||c==="OA"||c==="AA")
+  {
+    document.getElementById("h1").textContent='A,O'
+  }
+  else if(c==="BO"||c==="OB"||c==="BB")
+  {
+    document.getElementById("h1").textContent='B,O'
+  }
+   else if(c==="ABO"||c==="OAB")
+  {
+    document.getElementById("h1").textContent='A,B'
+  }
+   else if(c==="AB"||c==="BA")
+  {
+    document.getElementById("h1").textContent='A,B,O,AB'
+  }
+   else if(c==="AAB"||c==="BAB"||c==="ABA"||c==="ABB"||c==="ABAB")
+  {
+    document.getElementById("h1").textContent='A,B,AB'
+  }
+  else if(c==="OO"){
+    document.getElementById('h1').textContent='Your "Blood Group" is: "O"'
+  }
+  else 
+  {
+    document.getElementById('h1').textContent='Please enter the correct "Blood Group"'
+  }
+    }
+function Reset(){
+    document.getElementById('myselect').selectedIndex=0
+    document.getElementById('myselect1').selectedIndex=0
+    document.getElementById('h1').textContent=''
+}
+Split()
+    </script>
+</head>
+<body><div class="container">
+    <label>Enter Your Father's "Blood Group"</label><br><br>
+    <select id="myselect">
+        <option>---Select---</option>
+        <option>A</option>
+        <option>B</option>
+        <option>O</option>
+        <option>AB</option>
+    </select>
+    <br><br>
+    <label>Enter Your Mother's "Blood Group"</label><br><br>
+     <select id="myselect1">
+        <option>---Select---</option>
+        <option>A</option>
+        <option>B</option>
+        <option>O</option>
+        <option>AB</option>
+    </select>
+   <br><br>
+    <button onclick="Results()">Click to get Result</button>
+    <button onclick="Reset()">Reset</button><br><br>
+    <label>Possible "Blood Groups" are:</label><br>
+    <h1 id="h1"></h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=['a','e','i','o','u']
+        while (true){
+        var b=prompt("Enter a letter (Enter q to Exit): ")
+        if(b.length>1){
+            alert('Please enter a single letter')
+            continue
+        }
+        if(/^[A-Za-z]$/.test(b)){
+        b=b.toLowerCase()
+        }
+        else{
+            alert('Please enter only alphabet between(a-z)')
+            continue
+        }
+        if(b=='a'| b=='e'| b=='i'| b=='o'| b=='u')
+    {
+        alert(`The Letter ${b} is a Wovel`)
+    }
+    else{
+        if(b!='q'){
+        alert(`The Letter ${b} is not a Wovel`)
+        }
+        else{alert('*****Thank You*****')
+        break}
+    }
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

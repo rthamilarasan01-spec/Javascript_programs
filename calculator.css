@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(154, 3, 185);
+    align-content: center;
+    align-items: center;
+}
+table{
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    width: 300px;
+    margin-left: 500px;
+    margin-top: 50px;
+    border: 0px;
+    border-style: groove;
+    padding: 20px;
+    align-content: center;
+    background-color: dimgray;
+    box-shadow: 0 0 50px;
+}
+#btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px;
+    box-sizing: content-box;
+    color: aqua;
+    background-color: brown;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#btn:active{
+    color: burlywood;
+    background-color: chartreuse;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+#num{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: cadetblue;
+    box-shadow: 0 0 20px;
+    color: floralwhite;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
